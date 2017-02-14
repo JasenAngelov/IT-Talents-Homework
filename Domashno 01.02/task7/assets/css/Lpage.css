@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url("../pics/background.jpg");
+	background-size: cover;
+}
+
+#home {
+	background-color: black;
+	height: 110px;
+	width: 100%;
+	box-shadow: 0px 30px 20px 10px black;
+	display: flex;
+    align-items: center;
+	z-index: 10;
+	
+	
+}
+
+#play {
+	float: left;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+
+#neon-text {
+	margin-top: 10px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: none;
+	font: normal normal bold 72px/normal "Atomic Age", Helvetica, sans-serif;
+	color: rgb(64, 126, 196);
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	text-shadow: 1px 1px 0 rgb(77, 162, 252), -1px -1px 0 rgb(77, 162, 252),
+		1px -1px 0 rgb(77, 162, 252), -1px 1px 0 rgb(77, 162, 252), 4px 4px
+		8px rgb(44, 88, 137), -4px 4px 8px rgb(44, 88, 137), 4px -4px 8px
+		rgb(44, 88, 137), -4px -4px 8px rgb(44, 88, 137);
+	animation: blinker 1s linear 1;
+	animation-play-state: paused;
+}
+
+
+@keyframes blinker {  
+  10% { opacity: 0; }
+  15% { opacity: 0.5; }
+  17% { opacity: 0; }
+  25% { opacity: 1; }
+  27% { opacity: 0.3; }
+  54% { opacity: 0.5; }
+  78% { opacity: 0; }
+  
+}
+
+#play:ACTIVE + .neon-text > #neon-text {
+	animation-play-state: running;
+}
+.search{
+	box-shadow: 0px 0px 20px 10px #15293F;
+	background-color: #15293F;
+	height: 100px;
+	margin-top: 30px;
+	z-index: 2;
+}
+#search {
+	height: 30px;
+	width: 30%;
+	margin: 5px 35%;
+	border-radius: 10px;
+	background-color: #343434;
+	background-image: url("../pics/search.png");
+	background-repeat: no-repeat;
+	background-position: 98% 50%;
+	padding: 0 20px;
+	border-radius: 10px;
+	
+}
+
+
+#search:FOCUS{
+	content: ""
+	color: white;
+	animation: focus 1s forwards;   
+}
+#search:FOCUS::-webkit-input-placeholder {
+	color: transparent;
+}
+
+@keyframes focus {
+    from {
+    width: 30%;
+    margin: 5px 35%;
+    }
+    to {
+    width: 60%;
+    margin: 5px 20%;}
+}
+
+
+
+#movie{
+	text-align: center;
+	color: 	#8FA9A9;
+	font: normal normal bold 52px/normal "Atomic Age", Helvetica, sans-serif;
+	text-shadow: 1px 1px 0 rgb(77, 162, 252), -1px -1px 0 rgb(77, 162, 252),
+		1px -1px 0 rgb(77, 162, 252), -1px 1px 0 rgb(77, 162, 252), 4px 4px
+		8px rgb(44, 88, 137), -4px 4px 8px rgb(44, 88, 137), 4px -4px 8px
+		rgb(44, 88, 137), -4px -4px 8px rgb(44, 88, 137);
+}

@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+
+.header{
+	height: 10em;
+	background-color: #336666;	
+}
+.content{
+	height: 15em;
+	margin: 1em 3em ; 
+	background-color: green;	
+}
+.content2{
+	height: 2em;
+	margin: 0em 3em ;
+	white-space: nowrap;
+	
+	
+}
+#col1{
+	background-color: fuchsia;
+	display: inline-block;
+	width: 49%;
+	margin-right: 2%;
+	float: left;
+	
+}
+#col2{
+	background-color: blue;
+	display: inline-block;
+	width: 49%;
+	
+}

@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+#header{
+	background-color: #4483C7;
+	font-family: serif;
+	color: white;
+	font-size: 2em;
+	padding-left: 10px;
+	height: 40px;
+	border-bottom: solid black 1px;
+}
+.articles{
+	padding: 0 1%;
+	font-family: sans-serif;
+	
+}
+#article{
+	height: 30%;
+	border: solid #538620 1px;
+	margin-bottom: 15px;
+}
+#artH{
+	background-color:  #538620;
+	color: white;
+	padding-left: 10px;
+	margin-top: 0;
+}
+
+
+

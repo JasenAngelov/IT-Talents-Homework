@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: green;
+}
+#table{
+	position: absolute;
+	 left: 515px;
+    top: 143px;
+    z-index: 1;
+    animation: table 6s ease 1 reverse;
+    
+    
+}
+#ball{
+	position: absolute;
+	left: 715px;
+    top: 341px;
+    z-index: 2;
+    animation: orbit 2s linear 3 reverse;
+    -webkit-transform: translateX(110px);
+    -moz-transform: translateX(110px);
+    -ms-transform: translateX(110px);
+    -o-transform: translateX(110px);
+    transform: translateX(110px);
+    
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+
+@keyframes table {
+	from { transform:  rotate(0deg); }
+    to  { transform:  rotate(-720deg); }
+   
+  
+}
